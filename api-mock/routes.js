@@ -3,7 +3,9 @@ export default [
     url: '/backend/dummy',
     method: 'GET',
     response: {
-      data: 'dummy'
+      code: 200,
+      status: 'OK',
+      data: 'dummy text from api serverless'
     }
   }
 ]

@@ -1,7 +1,7 @@
 import { getDummy } from '@/api/dummy'
-const state = {
+const state = () => ({
   dummy: 'initDummy'
-}
+})
 
 const mutations = {
   setDummy(state, value) {
@@ -10,7 +10,7 @@ const mutations = {
 }
 
 const actions = {
-  changeDummy({ commit }, { success, fail }) {
+  changeDummy({ commit }, { success, fail, data }) {
     getDummy((response) => {
       commit('setDummy', response.body.data)
       success && success(response)
@@ -25,7 +25,6 @@ const getters = {
 }
 
 export default {
-  namespaced: true,
   state,
   mutations,
   actions,

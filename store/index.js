@@ -1,16 +1,11 @@
-import Vuex from 'vuex'
-import dummy from './modules/dummy'
+const state = () => ({})
+const mutations = {}
+const actions = {}
+const getters = {}
 
-const createStore = () => {
-  return new Vuex.Store({
-    state: {},
-    mutations: {},
-    actions: {},
-    getters: {},
-    modules: {
-      dummy
-    }
-  })
+export default {
+  state,
+  mutations,
+  actions,
+  getters
 }
-
-export default createStore
