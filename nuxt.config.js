@@ -1,3 +1,5 @@
+const loadMock =
+  process.env.NODE_ENV === 'development' ? './plugins/ApiMock.js' : './empty.js'
 export default {
   mode: 'universal',
   /*
@@ -27,7 +29,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['./plugins/ApiMock.js'],
+  plugins: [loadMock],
   /*
    ** Nuxt.js dev-modules
    */

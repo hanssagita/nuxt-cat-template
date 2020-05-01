@@ -1,4 +1,4 @@
-# nuxt-app2
+# nuxt-cat-template
 
 > My extraordinary Nuxt.js project
 

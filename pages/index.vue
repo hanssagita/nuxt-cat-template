@@ -32,13 +32,13 @@ export default {
     Logo
   },
   asyncData({ store }) {
-    store.dispatch('dummy/changeDummy', { data: 'server' })
+    store.dispatch('dummy/changeDummy', {})
   },
   computed: {
     ...mapGetters('dummy', ['dummy'])
   },
   created() {
-    this.changeDummy({ data: 'client' })
+    this.changeDummy({})
   },
   methods: {
     ...mapActions('dummy', ['changeDummy'])

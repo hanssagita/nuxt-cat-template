@@ -1,6 +1,6 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
-import ApiRoutes from '@/api-mock/routes'
+import ApiRoutes from '../api-mock/routes'
 
 const routes = ApiRoutes
 

@@ -10,7 +10,7 @@ const mutations = {
 }
 
 const actions = {
-  changeDummy({ commit }, { success, fail, data }) {
+  changeDummy({ commit }, { success, fail }) {
     getDummy((response) => {
       commit('setDummy', response.body.data)
       success && success(response)
